@@ -1,0 +1,23 @@
+class Animal:
+    def voice(self):
+        pass
+
+class Tiger(Animal):
+    def voice (self):
+        return 'rrr'
+
+class Cow(Animal):
+    def voice(self):
+        return 'moo'
+
+class Sheep(Animal):
+    def voice(self):
+        return 'mee'
+
+simple_Tiger = Tiger()
+simple_Cow = Cow()
+simple_Sheep = Sheep()
+
+print(simple_Tiger.voice())
+print (simple_Cow.voice())
+print (simple_Sheep.voice())
