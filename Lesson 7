@@ -1,0 +1,32 @@
+class Animal:
+    numInstances  =0
+    def __init__(self):
+        Animal.numInstances +=1
+    def voice(self):
+        pass
+
+class Tiger(Animal):
+    def voice(self):
+        return 'rrr'
+
+class Cow(Animal):
+    def voice(self):
+        return 'moo'
+
+class Sheep(Animal):
+    def voice(self):
+        return 'mee'
+
+def printNumInstances():
+    print ('How many of us are there?', Animal.numInstances)
+
+simple_Tiger = Tiger()
+simple_Cow = Cow()
+simple_Sheep = Sheep()
+Animal.numInstances
+
+
+print(simple_Tiger.voice())
+print (simple_Cow.voice())
+print (simple_Sheep.voice())
+printNumInstances()
