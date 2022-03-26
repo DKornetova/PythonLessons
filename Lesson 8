@@ -1,0 +1,10 @@
+with open('doc.txt', 'r') as d:
+    d_str = d.read()
+    print(d_str)
+
+with open ('doc2.txt', 'w') as d1:
+    d1.write (d_str[::-1])
+
+with open('doc2.txt', 'r') as d1:
+    d1_str = d1.read()
+    print(d1_str)
