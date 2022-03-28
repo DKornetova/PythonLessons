@@ -1,10 +1,11 @@
+
 import threading
 import time
 
 def count (k):
     m = 10
     while m > 0:
-        print(f"{k} поток сейчас пишет:{m}")
+        print(f"{k} thread is writing:{m}")
         m -= 1
         time.sleep(3)
 
