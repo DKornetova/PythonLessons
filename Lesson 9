@@ -1,0 +1,14 @@
+import threading
+import time
+
+def count (k):
+    m = 10
+    while m > 0:
+        print(f"{k} поток сейчас пишет:{m}")
+        m -= 1
+        time.sleep(3)
+
+
+for k in range(1,2):
+    t = threading.Thread(target=count, args=(k, ))
+    t.start()
